@@ -15,10 +15,9 @@ import { xcodeDark } from "@uiw/codemirror-theme-xcode";
 
 // py, c, cpp, node, java
 // 각각 0, 1, 2, 3, 4 번
-type codes = string[];
 
 const code_type = [python(), cpp(), cpp(), javascript(), java()];
-const code_templates: codes = [
+const code_templates: string[] = [
   `print("Hello World!")`,
 
   `#include <stdio.h>
