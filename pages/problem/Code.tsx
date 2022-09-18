@@ -65,11 +65,12 @@ const Code: NextPage = () => {
   return (
     <>
       <CodeMirror
+        
         className={styles.editor}
         theme={xcodeDark}
         value={now_template}
         extensions={[now_selected_lang]}
-        onChange={(value:any, viewUpdate:any) => {
+        onChange={(value: any, viewUpdate: any) => {
           setNowCode(value);
           console.log(nowCode);
         }}
