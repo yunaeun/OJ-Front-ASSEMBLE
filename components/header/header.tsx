@@ -8,9 +8,15 @@ const Header: NextPage = () => {
     <S.HeaderBox>
       <S.Logo alt="logo" src="/images/logo.png" />
       <S.Nav>
-        <Link href="/hold">대회개최</Link>
-        <Link href="/list">대회목록</Link>
-        <Link href="/">문제목록</Link>
+        <Link href="/hold">
+          대회개최
+        </Link>
+        <Link href="/list">
+          대회목록
+        </Link>
+        <Link href="/">
+          문제목록
+        </Link>
       </S.Nav>
       <S.Search />
       <div

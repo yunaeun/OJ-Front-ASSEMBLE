@@ -65,7 +65,6 @@ const Code: NextPage = () => {
   return (
     <>
       <CodeMirror
-        
         className={styles.editor}
         theme={xcodeDark}
         value={now_template}

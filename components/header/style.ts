@@ -13,7 +13,6 @@ export const Logo = styled.img`
   height: 28px;
 `;
 
-
 export const Search = styled.input`
   height: 30px;
   border: 1px solid white;
@@ -35,4 +34,5 @@ export const Nav = styled.div`
   width: 20%;
   align-items: center;
   justify-content: space-between;
+  font-size: 16px;
 `;
