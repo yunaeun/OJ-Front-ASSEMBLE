@@ -1,5 +1,9 @@
 import type { NextPage } from "next";
 import * as S from "../../styles/index-style";
+import { AiFillStar } from "react-icons/ai";
+import { AiOutlineStar } from "react-icons/ai";
+//npm install react-icons --save
+//yarn add react-icons
 
 const ProblemLevel = (props: {
   level: string;
@@ -7,8 +11,14 @@ const ProblemLevel = (props: {
   star: string;
 }) => {
   return (
-    <S.Container>
-      <S.Problem>
+    <S.Problem>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
         <S.Level
           style={
             props.level === "1"
@@ -24,22 +34,26 @@ const ProblemLevel = (props: {
         >
           LV {props.level}
         </S.Level>
-
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginTop: "12px",
-          }}
-        >
-          <S.Content>신고 결과 받기</S.Content>
-          {props.complete === "complete" ? (
-            <S.CompleteButton>완료</S.CompleteButton>
-          ) : null}
-        </div>
-      </S.Problem>
-    </S.Container>
+        {props.star == "star" ? (
+          <AiFillStar size="20" color="#FFE55C" />
+        ) : (
+          <AiOutlineStar size="20" color="#FFE55C" />
+        )}
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginTop: "12px",
+        }}
+      >
+        <S.Content>신고 결과 받기</S.Content>
+        {props.complete === "complete" ? (
+          <S.CompleteButton>완료</S.CompleteButton>
+        ) : null}
+      </div>
+    </S.Problem>
   );
 };
 
