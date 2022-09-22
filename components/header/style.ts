@@ -10,7 +10,7 @@ export const HeaderBox = styled.header`
 `;
 
 export const Logo = styled.img`
-  height: 28px;
+  height: 31px;
 `;
 
 export const Search = styled.input`
@@ -18,12 +18,16 @@ export const Search = styled.input`
   border: 1px solid white;
   background-color: #414143;
   width: 40%;
-  border-radius: 15px;
+  border-radius: 17px;
   background-image: url(/images/search.png);
   background-repeat: no-repeat;
   background-size: 18px;
   background-position-x: 97%;
   background-position-y: 5px;
+  padding: 17px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 15px;
   &:focus {
     outline: none;
   }
@@ -34,5 +38,5 @@ export const Nav = styled.div`
   width: 20%;
   align-items: center;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 18px;
 `;
