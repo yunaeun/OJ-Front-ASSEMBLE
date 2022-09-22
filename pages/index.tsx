@@ -6,24 +6,26 @@ import ProblemLevel from "./problemlist/problemLevel";
 
 const Home: NextPage = () => {
   return (
-    <S.Container>
+    <S.BContainer>
       <S.Title>문제목록</S.Title>
-      {["1", "2", "3", "4", "5"].map((data, idx) => {
-        return (
-          <ProblemLevel
-            key={idx}
-            level={data}
-            star={"star"}
-            complete={"complete"}
-          />
-        );
-      })}
-      {["1", "2", "3", "4", "5"].map((data, idx) => {
-        return (
-          <ProblemLevel key={idx} level={data} star={"star"} complete={""} />
-        );
-      })}
-    </S.Container>
+      <S.Container>
+        {["1", "2", "3", "4", "5"].map((data, idx) => {
+          return (
+            <ProblemLevel
+              key={idx}
+              level={data}
+              star={"star"}
+              complete={"complete"}
+            />
+          );
+        })}
+        {["1", "2", "3", "4", "5"].map((data, idx) => {
+          return (
+            <ProblemLevel key={idx} level={data} star={"star"} complete={""} />
+          );
+        })}
+      </S.Container>
+    </S.BContainer>
   );
 };
 
