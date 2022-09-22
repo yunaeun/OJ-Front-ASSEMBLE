@@ -1,0 +1,37 @@
+.main {
+  margin: 0;
+  padding: 20px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.main::-webkit-scrollbar {
+  width: 8px;
+}
+.main::-webkit-scrollbar-thumb {
+  height: 20%;
+  background: #777;
+}
+.main::-webkit-scrollbar-track {
+  background-color: rgba(33, 122, 244, 0.1);
+}
+
+.editor {
+  width: 100%;
+  height: calc(100vh - 50px);
+  overflow-x: hidden;
+  font-size: 20px;
+  cursor: auto;
+}
+
+.editor::-webkit-scrollbar {
+  width: 8px;
+}
+
+.editor::-webkit-scrollbar-thumb {
+  height: 20%;
+  background: #777;
+}
+
+.editor::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, 0.1);
+}
