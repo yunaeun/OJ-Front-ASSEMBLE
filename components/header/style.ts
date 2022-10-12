@@ -7,6 +7,10 @@ export const HeaderBox = styled.header`
   height: 3.5rem;
   align-items: center;
   background-color: #2a2a2c;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    height: 12rem;
+  }
 `;
 
 export const Logo = styled.img`
@@ -14,7 +18,7 @@ export const Logo = styled.img`
 `;
 
 export const Search = styled.input`
-  height: 30px;
+  height: 20px;
   border: 1px solid white;
   background-color: #414143;
   width: 40%;
@@ -39,4 +43,9 @@ export const Nav = styled.div`
   align-items: center;
   justify-content: space-between;
   font-size: 18px;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: 10px;
+    height: 5rem;
+  }
 `;
