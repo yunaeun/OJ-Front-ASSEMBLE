@@ -71,7 +71,7 @@ export const Submit = styled.button`
   background-color: #ffd144;
   height: 35px;
   font-size: 14px;
-  line-height: 10px;
+  line-height: 15px;
   border-radius: 10px;
   padding: 10px;
   color: white;
